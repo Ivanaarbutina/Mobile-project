@@ -1,0 +1,64 @@
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login {
+  display: flex;
+  background-color: var(--color-black);
+  width: 100%;
+  padding: 1rem;
+  justify-content: end;
+}
+
+.btn {
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--border-rounded);
+  color: var(--color-white);
+  background-color: var(--color-gray-500);
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  margin: 0.5rem;
+
+  &:hover {
+    background-color: var(--color-orange-600);
+  }
+
+  &--orange {
+    background-color: var(--color-orange-600);
+  }
+}
+.input {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-rounded);
+  border: 1px solid var(--color-gray-300);
+  transition: all 250ms ease-in-out;
+  margin-right: 0.5rem;
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--color-gray-500);
+  }
+}
+.phone {
+  &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-gray-100);
+    border-radius: var(--border-rounded);
+    margin: 0.5rem;
+
+    &__price {
+      font-size: 1.7rem;
+    }
+  }
+
+  &-add {
+    margin: 2rem;
+  }
+}
